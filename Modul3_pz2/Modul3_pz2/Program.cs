@@ -1,12 +1,11 @@
-﻿using System;
-
-namespace Modul3_pz2
+﻿namespace Modul3_pz2
 {
+    using System.Linq;
+    using System;
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
