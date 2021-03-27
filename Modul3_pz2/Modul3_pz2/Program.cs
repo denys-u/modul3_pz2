@@ -7,6 +7,11 @@
     {
         public static void Main(string[] args)
         {
+            var first = new FirstSolution();
+            first.Start();
+
+            var second = new SecondSolution();
+            second.Start();
         }
     }
 }
