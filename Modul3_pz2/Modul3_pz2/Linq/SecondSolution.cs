@@ -8,16 +8,8 @@
 
     public class SecondSolution
     {
-        List<User> users = new List<User>
-        {
-                new User { Name = "Denis", Age = 21 },
-                new User { Name = "Maria", Age = 27 },
-                new User { Name = "Dima", Age = 21 },
-                new User { Name = "Danil", Age = 23 },
-        };
+        public string Data { get; set; }
 
-        var selectUsers = from user in users
-                          where user.Age < 27
-                          select user;
+        public void 
     }
 }
