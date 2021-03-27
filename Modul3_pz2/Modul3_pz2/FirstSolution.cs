@@ -7,18 +7,18 @@
 
     public class FirstSolution
     {
-        private event Func<double, double, double> _func;
+        private event Func<double, double, double> Func;
 
         public void Start()
         {
-            _func += Sum;
-            _func += Sum;
+            Func += Sum;
+            Func += Sum;
 
             double result = 0;
 
             Try(() =>
             {
-                var list = _func.GetInvocationList();
+                var list = Func.GetInvocationList();
 
                 foreach (var item in list)
                 {
@@ -27,7 +27,7 @@
 
                 for (int i = 0; i < list.Length; i++)
                 {
-                    _func -= Sum;
+                    Func -= Sum;
                 }
             });
 
