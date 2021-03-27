@@ -42,6 +42,9 @@
             {
                 Console.WriteLine($"{first.Name} - {first.LastName} - {first.Age}");
             }
+
+            var fifth = list.SingleOrDefault(s => s.LastName == "Udovik");
+            Console.WriteLine($"{first.Name} - {first.LastName} - {first.Age}");
         }
     }
 }
